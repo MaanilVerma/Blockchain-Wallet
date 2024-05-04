@@ -57,8 +57,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = os.getenv('WHITELISTED_HOSTS').split(',')
-print("maanil",CORS_ORIGIN_WHITELIST)
+CORS_ORIGIN_WHITELIST = os.getenv('CORS_ALLOWED_ORIGINS').split(',')
+CORS_ALLOWED_ORIGINS= os.getenv('CORS_ALLOWED_ORIGINS').split(',')
+
 ROOT_URLCONF = 'project.urls'
 
 TEMPLATES = [
