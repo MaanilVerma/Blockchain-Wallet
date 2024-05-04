@@ -58,7 +58,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = os.getenv('WHITELISTED_HOSTS').split(',')
-
+print("maanil",CORS_ORIGIN_WHITELIST)
 ROOT_URLCONF = 'project.urls'
 
 TEMPLATES = [
