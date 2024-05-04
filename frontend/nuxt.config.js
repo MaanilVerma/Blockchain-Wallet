@@ -43,10 +43,11 @@ export default {
   axios: {
     baseURL: process.env.BACKEND_URL,
   },
-
+  buildDir: 'dist',
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [({ isLegacy }) => isLegacy && 'axios']
   },
+  
   
 }
